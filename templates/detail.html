@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> House of Representatives - Florida - {{ district }} </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style8.css') }}">
+</head>
+<body>
+
+<div id="container">
+
+<h1> District: {{ district }} </h1>
+<p> Total of citizens 18 years and older: {{ total_citizens}} </p>
+<p> Voting age population:</p>
+<p> 18-29 years: {{ eighteen_twentynine }} </p>
+<p> 30-44 years: {{ thirty_fortyfour }} </p>
+<p> 45-64 years: {{ fortyfive_sixtyfour }} </p>
+<p> 65 years and over: {{ sixtyfive_over }} </p>
+
+<p><a href="{{ url_for('index') }}">Return to list</a></p>
+
+
+</div>
+
+</body>
+</html>

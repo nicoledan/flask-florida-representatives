@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> House of Representatives - Florida </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style8.css') }}">
+</head>
+<body>
+
+<div id="container">
+
+  <h1>Florida Congressional Districts</h1>
+  <p> This is a list of Florida Congressional Districst.</p>
+  <ul>
+    {% for pair in pairs %}
+    <li> <a href="{{ url_for('detail', id=pair[0] ) }}"> {{ pair[1] }} </a> </li>
+    {% endfor %}
+  </ul>
+
+</div>
+
+</body>
+</html>

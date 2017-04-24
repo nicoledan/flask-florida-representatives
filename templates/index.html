@@ -11,10 +11,10 @@
 <div id="container">
 
   <h1>Florida Congressional Districts</h1>
-  <p> This is a list of Florida Congressional Districst.</p>
+  <p> This is a list of Florida Congressional Districts.</p>
   <ul>
     {% for pair in pairs %}
-    <li> <a href="{{ url_for('detail', id=pair[0] ) }}"> {{ pair[1] }} </a> </li>
+    <li> <a href="{{ url_for('detail', district=pair[0] ) }}"> Representative {{ pair[1] }} </a> </li>
     {% endfor %}
   </ul>
 

@@ -10,14 +10,14 @@
 
 <div id="container">
 
-  <h1>Florida Congressional Districts</h1>
-  <p> This is a list of Florida Congressional Districts.</p>
+  <h1>Florida Congressional Representatives</h1>
+  <p> This is a list of Florida Congressional Representatives. Click the links below to find a demogrpahic profile of the representative's district and their PolitiFact data. You can find your representative <a href="http://www.house.gov/htbin/findrep" target="_blank">here.</a></p>
   <ul>
     {% for pair in pairs %}
     <li> <a href="{{ url_for('detail', district=pair[0] ) }}"> Representative {{ pair[1] }} </a> </li>
     {% endfor %}
   </ul>
-
+<footer><a href="https://github.com/nicoledan/flask-florida-representatives/tree/master">Project</a> by Nicole Dan</footer>
 </div>
 
 </body>
